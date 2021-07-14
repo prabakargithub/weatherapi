@@ -1,0 +1,45 @@
+.weatherheader {
+    margin:auto;
+    width:30%;
+    margin-top: 200px;
+    list-style-type: none;
+}
+
+.weatherheader li {
+    display: inline-block;
+    text-align: center;
+}
+
+.city {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.weatherdisplay {
+    margin:auto;
+    position: absolute;
+	left: 0;
+	right: 0;
+    margin: auto;
+    width: 35%;
+    border: solid #000 1px;
+    margin-top: 10px;
+    display: block;
+    flex-direction: row;
+    background-color: #d3c8a6;
+    border-radius:5px;
+}
+
+.weathertable {
+   text-align: center;
+   width:100%;
+}
+
+.weathertable td {
+    text-align:left;
+    width:8%;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding:15px;
+}
