@@ -1,7 +1,7 @@
 {
-  "homepage":"http://prabakargithub.github.io/weather-api",
+  "homepage": "http://prabakargithub.github.io/weather-api",
   "name": "weather-app",
-  "proxy": "http://localhost:8080/",
+  "proxy": "http://weatherapp-svc/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,8 +15,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

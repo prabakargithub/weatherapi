@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useState, Fragment, useEffect } from 'react';
+import React, { useState, Fragment } from 'react';
 import * as weatherImg from '../../UI/bgImgConstant';
 import classes from '../search/CitySearch.module.css';
 import WeatherDisplay from '../weather/WeatherDisplay';
@@ -16,7 +16,7 @@ const CitySearch = (props) => {
         event.preventDefault();
 
         let header = { "headers": { "content-type": "application/json" } };
-        const response = await axios.post("http://localhost:8080/city", city, header)
+        const response = await axios.post("http://weatherapp-svc/city", city, header)
         setWeatherData(response.data);
         changeBackgroundImage(response.data);
 
